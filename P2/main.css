@@ -1,0 +1,55 @@
+
+body{
+    font-family: 'Roboto';
+    margin:auto;
+    background: #e2e2e2;
+}
+
+
+header{
+    text-align:center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main{
+    width:800px;
+    margin:auto;
+}
+
+section{
+    background: white;
+    padding: 5px 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+li{
+    margin: 10px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+}
+
+footer{
+    text-align:center;
+}
+
