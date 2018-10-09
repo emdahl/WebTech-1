@@ -49,10 +49,12 @@ th, td {
     padding: 5px;
 }
 
-#layout_img{
+img{
     margin: 0 auto;
     width: 550px;
 }
+
+
 
 a{
     color: black;
