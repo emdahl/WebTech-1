@@ -1,20 +1,26 @@
+
+document.getElementsByClassName("div2")[0].style.left = -10;
+
 window.onscroll = function() {makewhite()};
 
-function makewhite(){
-	var phone = document.getElementById("dv1").offsetTop;
-	var phone2 = document.getElementById("dv2").offsetTop;
-	var phone3 = document.getElementById("dv3").offsetTop;
-	var phone4 = document.getElementById("dv4").offsetTop;
-	var docscroll = document.documentElement.scrollTop;
-	var feature = document.getElementById("feature");
-	var feature2 = document.getElementById("feature2");
-	var feature3 = document.getElementById("feature3");
-	var feature4 = document.getElementById("feature4");
-	var contentA = document.getElementById("contentA");
-	var contentB = document.getElementById("contentB");
-	var contentC = document.getElementById("contentC");
-	var contentD = document.getElementById("contentD");
+const feature = document.getElementById("feature");
+const feature2 = document.getElementById("feature2");
+const feature3 = document.getElementById("feature3");
+const feature4 = document.getElementById("feature4");
+const listoffeatures = [feature, feature2, feature3, feature4];
+const contentA = document.getElementById("contentA");
+const contentB = document.getElementById("contentB");
+const contentC = document.getElementById("contentC");
+const contentD = document.getElementById("contentD");
+const listofcontent = [contentA, contentB, contentC, contentD];
 
+function makewhite(){
+	const phone = document.getElementById("dv1").offsetTop;
+	const phone2 = document.getElementById("dv2").offsetTop;
+	const phone3 = document.getElementById("dv3").offsetTop;
+	const phone4 = document.getElementById("dv4").offsetTop;
+	var docscroll = document.documentElement.scrollTop;
+	
 	if(docscroll > phone && docscroll < phone2){
 		feature.style.backgroundColor = "white";
 		feature2.style.backgroundColor = "#373E56";
@@ -45,4 +51,13 @@ function makewhite(){
 		contentD.style.color = "#373E56";		
 	}
 }
+
+function mewhite(string){
+	for(i in listoffeatures){
+		listoffeatures[i].style.backgroundColor = "#373E56";
+		listofcontent[i].style.color = "white";
+	}
+	document.getElementById(string).style.backgroundColor ="white";
+}
+
 
