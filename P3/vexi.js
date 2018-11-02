@@ -60,4 +60,9 @@ function mewhite(string){
 	document.getElementById(string).style.backgroundColor ="white";
 }
 
+function thanksForTheForm(){
+	var user = document.getElementById("nameofSub");
+	alert("Thank you for your feedback "+ user + ".");
+}
+
 

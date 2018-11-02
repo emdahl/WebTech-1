@@ -8,21 +8,20 @@
 	<img class = "bck" src="background.png">
 	<div id="buttonCluster">
 		<button id ="contact"><a class ="buttonstyle" id = "contact" href="about.html">Contact</a></button>
-		<button id ="buttin"><a class ="buttonstyle" id="roadmap" href="index.html">Roadmap</a></button>
+		<button id ="buttin"><a class ="buttonstyle" id="roadmap" href="roadmap.html">Roadmap</a></button>
+
 	</div>
-	<div class="wrap">
 		<div id="formstad">
-	        <form id = "theContact">
-	        	<h3>Contact Vexi</h3>
-				<label>Name</label><br>
-				<input type="text" name="name" required><br>
-				<label>E-mail</label><br>
-				<input type="email" name="email" required><br>
-				<label>Message</label><br>
+	        <form id = "theContact" onsubmit="return thanksForTheForm(nameOfSub, emailName)">	
+				<label>NAME</label><br>
+				<input type="text" id="nameOfSub" name="name" required><br>
+				<label>E-MAIL</label><br>
+				<input type="email" id="emailName" name="email" required><br>
+				<label>MESSAGE</label><br>
 			</form>
-			<textarea rows="8" cols="25">Enter text</textarea form="theContact"><br>
+			<textarea rows="8"></textarea form="theContact"><br>
 			<input type="submit" value="Submit tax form" class = "submit" form ="theContact"><br>
 		</div>
-	</div>
+		<script type="text/javascript" src = "vexi2.js"></script>
 </body>
 </html>
